@@ -1,0 +1,1246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.navBar{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+}
+.navLogo{
+    display: flex;
+    list-style: none;
+    align-self: center;
+    margin-left: 10px;
+}
+.navOther{
+    width: 35%;
+    height: 100%; 
+}
+.navOtherUl{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.navOtherUl li{
+    font-size: 1.1rem;
+    height: 100%;
+    display: flex;    
+}
+.navOtherUl li a{
+    text-decoration: none;
+    color: black;
+}
+#navNews{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    height: auto;
+    position: relative;
+}
+#navNews::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#navNews:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#navSub{   
+    width: auto;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 14px;
+    position: relative; 
+    z-index: 0;
+}
+#navSub a{
+    color: white;
+}
+#navSub::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right,rgb(220, 180, 0),rgb(220, 180, 0));
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+#navSub:hover::after{
+    width: 100%;
+    z-index: -1;
+}
+#navSub a:hover{
+    color: black;    
+}
+
+
+
+
+.firstCore{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 1150px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+#fcHeaderMainTitle{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+#fcHeaderSecondTitle{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+#fcHeaderSecondTitle a{
+    color: white;
+    text-decoration: none;
+}
+.yellowBar{
+    display: flex;
+    justify-content: center;
+}
+#fcHeaderYellowBar{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    width: 60px;
+}
+.fcBody{
+    display: flex;
+    justify-content: center;
+}
+.fcLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    width: 25%;
+}
+#fcLeftTitle{
+    font-size: 2.5rem;
+    text-align: start;
+    border-left: 5px solid rgb(220, 180, 0);
+    text-align: center;
+}
+#fcHeaderSecondTitle a{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    position: relative;
+    z-index: 0;
+}
+#fcHeaderSecondTitle a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#fcHeaderSecondTitle a:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#fcHeaderSecondTitle a:hover{
+    color: black;
+}
+.tpList{
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+}
+.tpImg img{
+    width: 100px;
+    height: 100px;
+}
+.tpLink a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 15px;
+}
+.tpLink a:hover{
+    text-decoration: underline;
+}
+#tpListSee{
+    margin-top: 20px;
+    list-style: none;
+    text-align: start;
+    position: relative;
+    z-index: 0;
+}
+#tpListSee a{
+    color: white;
+    text-decoration: none;  
+}
+#tpListSee::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    width: 22%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#tpListSee:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#tpListSee a:hover{
+    color: black;
+}
+.fcRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.fcRightTop{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+    background-image: url(./images/GettyImages-1317478936_4x3.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: left;
+    justify-content: end;
+    margin-left: 50px;
+    transition: 0.5s ease;
+}
+.fcRightTop a{
+    color: white;
+    text-decoration: none;   
+}
+.fcRightTop b{
+    color: white;
+    font-size: 2.7rem;
+}
+.fcRightTop:hover{
+    background-size: 120%;
+}
+.fcRightTop p{
+    color: white;
+}
+.fcRightBottom{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+#fcRightBottomLeftLink{
+    background-image: url(./images/AJ_Thumb_3_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent;
+}
+#fcRightBottomRightLink{
+    background-image: url(./images/STOCK_MZ3890_GettyImages-524350466_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent;  
+}
+.fcRightBottomRight{
+    box-shadow: 5px 5px 0px rgb(220, 180, 0);
+}
+#fcRightBottomRightLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+#fcRightBottomLeftLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+.fcRightBL{
+    border: 5px solid white;
+    background-color: white;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.fcLeftBL{
+    border: 5px solid black;
+    background-color: black;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.fcRightBL a{
+    color: black;
+    text-decoration: none;
+}
+.fcLeftBL a{
+    color: white;
+    text-decoration: none;
+}
+#fcRightBL2{
+    font-size: 1.5rem;
+}
+#fcLeftBL2{
+    font-size: 1.5rem;
+}
+.fcLeftBL p{
+    color: white;
+}
+#fcRightBL1:hover{
+    text-decoration: underline;
+}
+#fcLeftBL1:hover{
+    text-decoration: underline;
+}
+
+
+
+.videoCore{
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+    background-color: black;
+}
+.videoCoreMainVideo{
+    position: relative;
+    height: 800px;
+}
+.VCMV{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.VCMV::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.VCMV iframe{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 800px;
+}
+.videoCoreText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+#vctHeader{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+#vctText{
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: 1.3rem;
+}
+#vctLink{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+#vctLink::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#vctLink:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#vctLink:hover{
+    color: black;
+}
+.videoCoreMovies{
+    width: 60%;
+    align-self: center;
+}
+.vcmLink{
+    display: flex;
+    justify-content: space-between;
+}
+.vcmLink a{
+    text-decoration: none;
+    color: white;
+}
+
+.videoCoreLi{
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    height: 330px;
+    margin-top: 25px;
+}
+#videoCoreLi1{
+    height: 300px;
+    background-image: url(./images/posters/ASmallLight_400x600_2x3.webp);
+}
+#videoCoreLi2{
+    height: 300px;
+    background-image: url(./images/posters/PathofthePanther_400x600_2x3.jpg);
+}
+#videoCoreLi3{
+    height: 300px;
+    background-image: url(./images/posters/SOTE_400x600_KEYART_CLEAN3_2x3.webp);
+}
+#videoCoreLi4{
+    height: 300px;
+    background-image: url(./images/posters/Restaurants_EOW_400x600_2x3.webp);
+}
+#videoCoreLi5{
+    height: 300px;
+    background-image: url(./images/posters/Limitless_HPDTile_400X600_2x3.webp);
+}
+#videoCoreLi6{
+    height: 300px;
+    background-image: url(./images/posters/FOL_HP_DPlus_TILE_400600_2x3.jpg);
+}
+#videoCoreLi7{
+    height: 300px;
+    background-image: url(./images/posters/EABG_HPDTile_400X600_2x3.webp);
+}
+#videoCoreLi8{
+    height: 300px;
+    background-image: url(./images/posters/_NG-Homepage_1920x2560_2x3.webp);
+}
+#videoCoreLi9{
+    height: 300px;
+    background-image: url(./images/posters/supernatural_400x600_clean_2x3.webp);
+}
+#videoCoreLi10{
+    height: 300px;
+    background-image: url(./images/posters/AMERICATBEAUTIFUL_TITLE_400X600_2x3.webp);
+}
+#videoCoreLi11{
+    height: 300px;
+    background-image: url(./images/posters/AMERICAPARKS2022_NG-Homepage_1920x2560_2x3.webp);
+}
+#videoCoreLi12{
+    height: 300px;
+    background-image: url(./images/posters/FreeSolo_HPDTile_400x600_2x3.jpg);
+}
+#videoCoreLi13{
+    height: 300px;
+    background-image: url(./images/posters/ETLT_400X600_ITLE_2x3.webp);
+}
+#videoCoreLi14{
+    height: 300px;
+    background-image: url(./images/posters/TBLF_400X600_ITLE_2x3.jpg);
+}
+#videoCoreLi15{
+    height: 300px;
+    background-image: url(./images/posters//WTE_BANNER_400x600_2x3.webp);
+}
+#videoCoreLi16{
+    height: 300px;
+    background-image: url(./images/posters/BecomingCousteau_digitalbanner_400x600_2x3.webp);
+}
+.videoCoreLi li{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.videoCoreLi li a{
+    color: transparent;
+    font-size: 15rem;
+    border: 11px solid black;
+}
+.videoCoreLi li:hover{
+    background-size: 100%;
+    transition: 1s ease;
+}
+#vcSeeShows{
+    position: relative;
+    z-index: 0;
+}
+#vcSeeShows::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#vcSeeShows:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#vcSeeShows:hover{
+    color: black;
+}
+
+
+
+.natGeoTV{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background-color: black;
+    align-items: center;
+}
+.natGeoTVHeader{
+    color: white;
+    font-size: 2rem;
+}
+#TVYellowBar{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    width: 60px;
+}
+.natGeoTVShows{
+    display: flex;
+    width: 60%;
+    height: 50%;
+    position: relative;
+}
+.natGeoTVShows ul{
+    display: flex;
+}
+#TVImage1{
+    width: 300px;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    z-index: 1;
+}
+#TVImage2{
+    width: 350px;
+    position: absolute;
+    left: 45%;
+    top: 7%;
+    z-index: 2;
+}
+#TVImage3{
+    width: 400px;
+    position: absolute;
+    left: 28%;
+    z-index: 3;
+}
+#TVImage4{
+    width: 350px;
+    position: absolute;
+    left: 17%;
+    top: 7%;
+    z-index: 2;
+}
+#TVImage5{
+    width: 300px;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    z-index: 1;
+}
+#natGeoTVShowsLink{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    z-index: 4;    
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: rgb(220, 180, 0);
+    padding: 10px 25px;
+}
+#natGeoTVShowsLink::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,white,white);
+    width: 0px;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+#natGeoTVShowsLink:hover::after{
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+.travel{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 1150px;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(./images/nationalgeographic-background.webp);
+}
+#travelTitle{
+    color: white;
+    font-size: 4rem;
+}
+#travelYellowBar{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    width: 60px;
+}
+.travelBody{
+    display: flex;
+    justify-content: space-evenly;
+}
+.trRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+}
+#trRightTitle{
+    font-size: 2.5rem;
+    text-align: start;
+    border-left: 5px solid rgb(220, 180, 0);
+    text-align: center;
+    color: white;
+}
+.trLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.trLeftTop{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/NationalGeographic_2746069_JRoh_4x3.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: left;
+    justify-content: end;
+    transition: 0.5s ease;
+}
+.trLeftTop a{
+    color: white;
+    text-decoration: none;    
+}
+.trLeftTop b{
+    color: white;
+    font-size: 2.7rem;
+}
+.trLeftTop:hover{
+    background-size: 120%;
+    transition: 0.5s ease;
+}
+.trLeftTop p{
+    color: white;
+}
+.trLeftBottom{
+    display: flex;
+    justify-content: space-between;
+}
+#trLeftBottomLeftLink{
+    background-image: url(./images/DSC03088_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent;
+    margin-right: 20px;
+}
+#trLeftBottomRightLink{
+    background-image: url(./images/LindbladAA424_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent; 
+}
+#trLeftBottomRightLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+#trLeftBottomLeftLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+
+.trRightBL{
+    border: 5px solid white;
+    background-color: white;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.trLeftBL{
+    border: 5px solid white;
+    background-color: white;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.trRightBL a{
+    color: black;
+    text-decoration: none;
+}
+.trLeftBL a{
+    color: black;
+    text-decoration: none;
+}
+#trRightBL2{
+    font-size: 1.5rem;
+}
+#trLeftBL2{
+    font-size: 1.5rem;
+}
+#trRightBL1:hover{
+    text-decoration: underline;
+}
+#trLeftBL1:hover{
+    text-decoration: underline;
+}
+
+.trList{
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+}
+.trImg img{
+    width: 100px;
+    height: 100px;
+}
+.trLink a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 15px;
+}
+.trLink a:hover{
+    text-decoration: underline;
+}
+#trListSee{
+    margin-top: 20px;
+    list-style: none;
+    text-align: start;
+    position: relative;
+    z-index: 0;
+}
+#trListSee a{
+    color: white;
+    text-decoration: none;
+}
+#trListSee::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    left: 0;
+    width: 23%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#trListSee:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#trListSee a:hover{
+    color: black;
+}
+#paidContent1{
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+}
+#paidContent2{
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+}
+
+
+
+.podcasts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+}
+.podcastsMainTitle{
+    font-size: 2rem;
+}
+.podcastsList{
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    height: 270px;
+    width: 60%;
+}
+#podcastsLi1{
+    background-image: url(./images/podcasts/lehua-kamalu_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi2{
+    background-image: url(./images/podcasts/SmallLightPhoto_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi3{
+    background-image: url(./images/podcasts/SecretsofElephants3-photo_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi4{
+    background-image: url(./images/podcasts/SecretsoftheElephants2-photo_3x2.jpg);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi5{
+    background-image: url(./images/podcasts/JoycePoole-photo_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi6{
+    background-image: url(./images/podcasts/MunazzaAlam-photo_3x2.jpg);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi7{
+    background-image: url(./images/podcasts/MM9640_210805_008370_DG_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi8{
+    background-image: url(./images/podcasts/NationalGeographic_1171615_3x2.jpg);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi9{
+    background-image: url(./images/podcasts/Nigeria8billion_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+#podcastsLi10{
+    background-image: url(./images/podcasts/China8billion_3x2.webp);
+    width: 300px;
+    height: 190px;
+}
+
+.podcastsList li{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.podcastsList li a{
+    color: transparent;
+    font-size: 10rem;
+    border: 7px solid white;
+}
+.podcastsList li:hover{
+    background-size: 110%;
+    transition: 1s ease;
+}
+.podcastsList li p{
+    font-size: 1.2rem;;
+}
+.podcastsBottomLink{
+    margin-top: 80px;
+    border: 1px solid white;
+    background-color: rgb(220, 180, 0);
+    position: relative;
+    z-index: 0;
+    padding: 14px;
+}
+.podcastsBottomLink a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.podcastsBottomLink::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255));
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+.podcastsBottomLink:hover::after{
+    width: 100%;
+    z-index: -1;
+}
+
+
+.may23{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 1150px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+#may23Title{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+#may23YellowBar{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    width: 60px;
+}
+.may23Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.may23Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+}
+#may23RightTitle{
+    font-size: 2.5rem;
+    text-align: start;
+    border-left: 5px solid rgb(220, 180, 0);
+    text-align: center;
+    color: white;
+}
+.may23Left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.may23LeftTop{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+    background-image: url(./images/MM9852_220707_013685_4x3.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: left;
+    justify-content: end;
+    transition: 0.5s ease;
+}
+.may23LeftTop a{
+    color: white;
+    text-decoration: none;    
+}
+.may23LeftTop b{
+    color: white;
+    font-size: 2.7rem;
+}
+.may23LeftTop:hover{
+    background-size: 120%;
+}
+.may23LeftTop p{
+    color: white;
+}
+.may23LeftBottom{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+#may23LeftBottomLeftLink{
+    background-image: url(./images/Phone_Elephants_07_Horizontal_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent;
+    margin-right: 20px;
+}
+#may23LeftBottomRightLink{
+    background-image: url(./images/NGM-10117-UK-order-page-tile-736x564_4x3.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30%;
+    font-size: 12rem;
+    color: transparent; 
+}
+#may23LeftBottomRightLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+#may23LeftBottomLeftLink:hover{
+    background-size: 110%;
+    transition: 0.5s ease;
+}
+.may23RightBL{
+    border: 5px solid white;
+    background-color: white;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.may23LeftBL{
+    border: 5px solid white;
+    background-color: white;
+    height: 180px;
+    width: 290px;
+    text-align: start;
+}
+.may23RightBL a{
+    color: black;
+    text-decoration: none;
+}
+.may23LeftBL a{
+    color: black;
+    text-decoration: none;
+}
+#may23RightBL2{
+    font-size: 1.5rem;
+}
+#may23LeftBL2{
+    font-size: 1.5rem;
+}
+#may23RightBL1:hover{
+    text-decoration: underline;
+}
+#may23LeftBL1:hover{
+    text-decoration: underline;
+}
+.may23List{
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+}
+.may23Img img{
+    width: 100px;
+    height: 100px;
+}
+.may23Link a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 15px;
+}
+.may23Link a:hover{
+    text-decoration: underline;
+}
+#may23ListSee{
+    margin-top: 20px;
+    list-style: none;
+    text-align: start;
+    position: relative;
+    z-index: 0;
+}
+#may23ListSee a{
+    color: white;
+    text-decoration: none;
+}
+#may23ListSee::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    left: 0;
+    width: 14%;
+    background: rgb(220, 180, 0);
+    transition: all 0.5s ease;
+}
+#may23ListSee:hover::after{
+    height: 100%;
+    z-index: -1;
+}
+#may23ListSee a:hover{
+    color: black;
+}
+
+
+
+.society{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+.societyMainTitle{
+    margin-top: 70px;
+    align-self: center;
+}
+#societyYellowBar{
+    border-bottom: 3px solid rgb(220, 180, 0);
+    width: 60px;
+}
+.societyLink{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-self: center;
+}
+.societyText{
+    margin-left: 30px;
+    margin-top: 80px;
+}
+#stLink1{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+#stLink2{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    background-image: url(./images/MossForest.adapt.885.1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.signUp h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.signUp h2{
+    color: white;
+}
+.signUp a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: rgb(220, 180, 0);
+    padding: 15px 180px 15px 180px;
+    position: relative;
+    z-index: 0;
+}
+.signUp a::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right,white,white);
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+.signUp a:hover::after{
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    background-color: black;
+    color: white;
+}
+.footerLists{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.footerLists ul{
+    list-style: none;
+}
+.footerLists ul li{
+    margin-top: 5px;
+}
+.footerLists ul li a{
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.footerLists ul li a:hover{
+    text-decoration: underline;
+}
+.footerFollowUsIcons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerFollowUsIcons li i{
+    font-size: 1.5rem;
+}
+
+
+
+.copyRight{
+    background-color: black;
+    height: 75px;
+}
+#copyRightWhiteLine{
+    border: 1px solid white;
+    width: 100%;
+    height: 1px;
+}
+.copyImage{
+    width: 35%;
+    display: flex;
+    justify-content: end;
+}
+.footerFollowUsIcons i:hover{
+    color: rgb(220, 180, 0);
+}
